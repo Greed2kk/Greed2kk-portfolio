@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>My Portfolio</title>
+	<link rel="shortcut icon" href="images/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Portfolio, Work, Web Developer, Rostov-on-Don, DSTU, PHP, JS" />
+	<script
+		type="applijegleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- темы -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!--шрифты-->
+	<link href='//fonts.googleapis.com/css?family=Candal|Raleway:500,600,400' rel='stylesheet' type='text/css'>
+	<!--//веб шрифты-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+
+	<!--стартовая наавигация-->
+	<ul class="side_nav">
+		<li><a class="active scroll" href="#home"></a></li>
+		<li><a class="scroll" href="#about"></a></li>
+		<li><a class="scroll" href="#experience"></a></li>
+		<li><a class="scroll" href="#skill"></a></li>
+		<li><a class="scroll" href="#port"></a></li>
+		<li><a class="scroll" href="#contact"></a></li>
+	</ul>
+	<div class="banner" id="home">
+		<div class="header-top">
+			<div class="container">
+				<!--top-nav-->
+				<span class="menu"> </span>
+				<div class="top-menu">
+					<nav>
+						<ul class="cl-effect-16">
+							<li><a class="active scroll" href="#home" data-hover="Главная">Главная</a></li>
+							<li><a class="scroll" href="#about" data-hover="Обо мне">Обо мне</a></li>
+							<li><a class="scroll" href="#experience" data-hover="Образование">Образование</a></li>
+							<li><a class="scroll" href="#skill" data-hover="Навыки">Навыки</a></li>
+							<li><a class="scroll" href="#port" data-hover="Портфолио">Портфолио</a></li>
+							<li><a class="scroll" href="#contact" data-hover="Контакты">Контакты</a></li>
+							<div class="clearfix"></div>
+						</ul>
+					</nav>
+				</div>
+
+				<script>
+					$("span.menu").click(function () {
+						$(".top-menu ul").slideToggle("slow", function () {
+						});
+					});
+				</script>
+				<!-- script для меню -->
+
+				<div class="clearfix"></div>
+				<!-- script для меню -->
+			</div>
+		</div>
+		<!--баннер-->
+		<div class="container">
+			<!-- script для меню -->
+			<div class="banner-info">
+				<div class="logo">
+					<a href="index.html">
+						<h1>Добро пожаловать</h1>
+					</a>
+				</div>
+				<p>Данный сайт представляет из себя мое портофлио. На нём можно увидеть мои работы и свзяаться со мной,
+					для дальнейшей работы. Я рассматриваю любые предложения по трудоустройству в сфере IT.</p>
+				<div class="scroll-down">
+					<h4>Вниз</h4>
+					<a class="downarrow scroll" href="#about"><span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--оьо мне-->
+	<div class="about" id="about">
+		<div class="container">
+			<h3 class="tittle">Обо мне</h3>
+			<div class="col-md-5 ab-grid pic">
+				<img src="https://pp.userapi.com/c847123/v847123797/1d50ff/y4knIJDSj_A.jpg" alt=" " title="ab">
+			</div>
+			<div class="col-md-7 ab-grid text">
+				<h4>Здравствуйте, меня зовут Андрей.
+					Я являюсь веб-разработчиком.</h4>
+				<p>Изучал инструменты веб-разработки. HTML+CSS из backend изучал php и sql использовал framework larval
+					и mysql из frontend изучал js ES6.</p>
+				<p>ВКР бакалавра была разработка Cms для магазина дверей. Магистерская диссертация была на тему
+					"разработка нейронной сети для классификации изображений в веб".</p>
+				<p>	Готов развиваться и расти как специалист в разных областях, изучать новые языки программирования и технологии проектирования, использовать различные подходы к решению задач. Готов работать в команде. </p>
+
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//обо мне-->
+	<!--оброзование-->
+	<div class="experience" id="experience">
+		<div class="container">
+			<h3 class="tittle four">Образование</h3>
+			<div class="experience-main">
+				<span class="devide-line"></span>
+				<div class="experience-left">
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+					<h4>Колледж Южного Федерального Университета</h4>
+					<h5>Среднее специальное образование [ 2010 - 2013 ]</h5>
+					<p>Автоматизированные информационные системы</p>
+				</div>
+				<div class="experience-left-snd">
+					<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+				</div>
+				<div class="experience-right-snd">
+					<h4>Донской Государственный Технический Университет</h4>
+					<h5>Бакалавриат [ 2013 - 2017 ]</h5>
+					<p>Прикладная информатика</p>
+				</div>
+				<div class="experience-left-trd">
+					<span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+					<h4>Донской Государственный Технический Университет</h4>
+					<h5>Магистратура [ 2017 - 2019 ]</h5>
+					<p>Прикладная информатика в информационной сфере</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//оброзование-->
+
+	<!--умения-->
+	<div class="my-skills text-center" id="skill">
+		<div class="container">
+			<h3 class="tittle">Умения</h3>
+			<div class="skill-grids">
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-1"></div>
+					<p>CSS3+bootstrap 3</p>
+				</div>
+
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-2"></div>
+					<p>Дизайн</p>
+				</div>
+
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-3"></div>
+					<p>JavaScript ES6+React</p>
+				</div>
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-4"></div>
+					<p>HTML5</p>
+				</div>
+
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-5"></div>
+					<p>PHP7+Laravel 5.7</p>
+				</div>
+
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-6"></div>
+					<p>Обучаемость</p>
+				</div>
+				<div class="clearfix"> </div>
+				<script type="text/javascript" src="js/circles.js"></script>
+
+				<script>
+					var colors = [
+						['#f6608a', '#ffffff'], ['#f6608a', '#ffffff'], ['#f6608a', '#ffffff'], ['#f6608a', '#ffffff'], ['#f6608a', '#ffffff'], ['#f6608a', '#ffffff']
+					];
+
+					for (i = 1; i <= 7; i++) {
+						var child = document.getElementById('circles-' + i);
+						percentage=30+i*10;
+
+						Circles.create({
+							id: child.id,
+							percentage: percentage,
+							radius: 80,
+							width: 10,
+							number: percentage,
+							text: '%',
+							colors: colors[i - 1]
+						});
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+	<!--//умения-->
+
+
+	<!--Работы-->
+	<script src="js/jquery.chocolat.js"></script>
+	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+	<!--light-box файлы -->
+	<script type="text/javascript" charset="utf-8">
+		$(function () {
+			$('.gallery a').Chocolat();
+		});
+	</script>
+
+	<div class="gallery" id="port">
+		<div class="container">
+			<h3 class="tittle port">Мои учебные работы</h3>
+			<div class="gallery-bottom">
+				<div class="col-md-4 bottom-gallery">
+					<a href="images/1.png" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img class="img-responsive" src="images/1.png" />
+						<div class="b-wrapper">
+							<h3 class="b-animate b-from-left    b-delay03 "> </h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 bottom-gallery">
+					<a href="images/2f.png" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img class="img-responsive" src="images/2.png" />
+						<div class="b-wrapper">
+							<h3 class="b-animate b-from-left    b-delay03 "> </h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 bottom-gallery">
+					<a href="images/3.png" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img class="img-responsive" src="images/3.png" />
+						<div class="b-wrapper">
+							<h3 class="b-animate b-from-left    b-delay03 "> </h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 bottom-gallery">
+					<a href="images/4.png" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img class="img-responsive" src="images/4.png" />
+						<div class="b-wrapper">
+							<h3 class="b-animate b-from-left    b-delay03 "> </h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 bottom-gallery">
+					<a href="images/5f.png" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img class="img-responsive" src="images/5.png" />
+						<div class="b-wrapper">
+							<h3 class="b-animate b-from-left    b-delay03 "> </h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 bottom-gallery">
+					<a href="images/6f.png" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img class="img-responsive" src="images/6.png" />
+						<div class="b-wrapper">
+							<h3 class="b-animate b-from-left    b-delay03 "> </h3>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+		</div>
+	</div>
+	<script src="js/jquery.chocolat.js"></script>
+	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+	<!--light-box файлы-->
+	<!-- Javascript вызовы -->
+	<script type="text/javascript" charset="utf-8">
+		$(function () {
+			$('#port a').Chocolat({ overlayColor: '#000', leftImg: 'images/leftw.gif', rightImg: 'images/rightw.gif', closeImg: 'images/closew.gif' });
+		});
+	</script>
+
+	<!--//работы-->
+
+	<!--start- свзязь со мной-->
+	<div class="contact_desc" id="contact">
+		<div class="container">
+			<h3 class="tittle">Свяжитесь со мной</h3>
+			<div class="contact-form">
+				<form class="left_form">
+					<div>
+						<span><label>Наименование организации</label></span>
+						<span><input name="userName" type="text" class="textbox"></span>
+					</div>
+					<div>
+						<span><label>E-MAIL</label></span>
+						<span><input name="userEmail" type="text" class="textbox"></span>
+					</div>
+					<div>
+						<span><label>Номер телефона</label></span>
+						<span><input name="userPhone" type="text" class="textbox"></span>
+					</div>
+				</form>
+				<form class="right_form">
+					<div>
+						<span><label>Сообщение</label></span>
+						<span><textarea name="userMsg"> </textarea></span>
+					</div>
+					<div>
+						<input type="submit" value="Отправить " />
+					</div>
+				</form>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact" id="contact">
+		<div class="col-md-6 contact-top">
+			<div class="point"> <i class="glyphicon glyphicon-map-marker"></i></div>
+			<h3 class="tittle two">Контактная информация</h3>
+			<h4>По любым вопросам свяжитесь со мной по электронной почте или телефону</h4>
+			<div class="contact-ad">
+					<p>E-mail : <a href="draier78@mail.ru">draier78@mail.ru</a></p>
+						<p>Номер телефон : +8(918)567-36-62<p>
+								<p>Город : Ростов-на-Дону<p></p>
+
+			</div>
+		</div>
+		<div class="col-md-6 map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86647.16207605235!2d39.55796049983502!3d47.26110366436756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3c777c3b4b6ef%3A0x8248b451e48b4d04!2z0KDQvtGB0YLQvtCyLdC90LAt0JTQvtC90YMsINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1561663568061!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="black">
+				<div class="map-l"> <i class="glyphicon glyphicon-map-marker"></i></div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--//contact-->
+
+
+	<!--footer-->
+	<div class="copy">
+		<p>&copy; 2019 Портфоло. Мой <a href="https://vk.com/greedos">VK</a> </p>
+	</div>
+	<!--start-smoth-scrolling-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+		
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
+		</span></a>
+
+</body>
+
+</html>
