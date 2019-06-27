@@ -84,7 +84,7 @@
 					для дальнейшей работы. Я рассматриваю любые предложения по трудоустройству в сфере IT.</p>
 				<div class="scroll-down">
 					<h4>Вниз</h4>
-					<a class="downarrow scroll" href="#about"><span></span></a>
+					<a class="downarrow scroll" href="#here"><span></span></a>
 				</div>
 			</div>
 		</div>
@@ -96,7 +96,7 @@
 			<div class="col-md-5 ab-grid pic">
 				<img src="https://pp.userapi.com/c847123/v847123797/1d50ff/y4knIJDSj_A.jpg" alt=" " title="ab">
 			</div>
-			<div class="col-md-7 ab-grid text">
+			<div class="col-md-7 ab-grid text" id="here">
 				<h4>Здравствуйте, меня зовут Андрей.
 					Я являюсь веб-разработчиком.</h4>
 				<p>Изучал инструменты веб-разработки. HTML+CSS из backend изучал php и sql использовал framework larval
@@ -284,6 +284,7 @@
 	<!--//работы-->
 
 	<!--start- свзязь со мной-->
+	<form action="send.php" method="post"></form>
 	<div class="contact_desc" id="contact">
 		<div class="container">
 			<h3 class="tittle">Свяжитесь со мной</h3>
@@ -308,13 +309,14 @@
 						<span><textarea name="userMsg"> </textarea></span>
 					</div>
 					<div>
-						<input type="submit" value="Отправить " />
+							<input type="submit" name="submit" value="Отправить">
 					</div>
 				</form>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
+</form>
 
 	<div class="contact" id="contact">
 		<div class="col-md-6 contact-top">
