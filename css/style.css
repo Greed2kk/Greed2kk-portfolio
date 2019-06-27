@@ -332,7 +332,7 @@ fieldset#body {
   display: inline-block;
   float: left;
   cursor: pointer;
-  margin: -10px 0px;
+  margin: -8px 0px;
 	}
 	.top-menu {
 		float: none;
@@ -553,7 +553,7 @@ span.devide-line {
     margin-top: 4em;
 }
 .skills-grid p{
-	margin:20px 0 0 0;
+	margin:20px;
 	color:#ffffff;
 	font-size: 0.9em;
 	font-weight:600;
