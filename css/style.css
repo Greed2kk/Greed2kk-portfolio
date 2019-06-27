@@ -332,7 +332,7 @@ fieldset#body {
   display: inline-block;
   float: left;
   cursor: pointer;
-  margin: 0px 0px;
+  margin: -8px 0px;
 	}
 	.top-menu {
 		float: none;
@@ -1179,7 +1179,7 @@ h3.tittle.two {
 	}
 	.contact-form input[type="submit"] {
 	  padding: 0.7em 0.7em;
-	  font-size: 0.95em;
+	  font-size: 0.70em;
 	  width: 38%;
 	  float: right;
 	}
@@ -1225,7 +1225,7 @@ h3.tittle.two {
 	  display: none;
 	}
 	.top-menu ul {
-	  margin: 53px 0;
+	  margin: -8px 0px;
 	  padding: 2% 0;
 	  z-index: 999;
 	  position: absolute;
@@ -1330,7 +1330,7 @@ h3.tittle.two {
 	}
 	.contact-form input[type="submit"] {
 	  padding: 0.7em 0.7em;
-	  font-size: 0.95em;
+	  font-size: 0.70em;
 	  width: 19%;
 	  float: left;
 	}
@@ -1626,7 +1626,7 @@ h3.tittle.two {
 	}
 	.contact-form input[type="submit"] {
 	  padding: 0.7em 0.7em;
-	  font-size: 0.95em;
+	  font-size: 0.70em;
 	  width: 27%;
 	  float: left;
 	}
@@ -2008,7 +2008,7 @@ h3.tittle.two {
 	}
 	.contact-form input[type="submit"] {
 	  padding: 0.7em 0.7em;
-	  font-size: 0.9em;
+	  font-size: 0.70em;
 	  width: 45%;
 	  float: left;
 	}
