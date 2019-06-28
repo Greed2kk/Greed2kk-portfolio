@@ -7,15 +7,15 @@
 */
 if(isset($_POST['submit'])){
 /* Устанавливаем e-mail Кому и от Кого будут приходить письма */    
-	$to = "draiver78@mail.ru"; // Здесь нужно написать e-mail, куда будут приходить письма	
+	$to = "greed2kk@gmail.com"; // Здесь нужно написать e-mail, куда будут приходить письма	
     $from = "no-reply@epicblog.net"; // Здесь нужно написать e-mail, от кого будут приходить письма, например no-reply@epicblog.net
 
 /* Указываем переменные, в которые будет записываться информация с формы */
-	$first_name = $_POST['userName'];
-	$email = $_POST['userEmail'];
-	$phone = $_POST['userPhone'];
-	$message = $_POST['userMsg'];
-    $subject = "Форма отправки сообщений с сайта портфолио";//Фиксированная тема письма
+	$first_name = $_POST['first_name'];
+	$email = $_POST['email'];
+	$phone = $_POST['phone'];
+	$message = $_POST['message'];
+    $subject = "Форма отправки сообщений с сайта Epic Blog";//Фиксированная тема письма
 	
 /* Проверка правильного написания e-mail адреса */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
@@ -36,7 +36,7 @@ $headers = "From: $from \r\n";
 	
 /* Отправка сообщения, с помощью функции mail() */
     mail($to, $subject, $mail_to_myemail, $headers . 'Content-type: text/plain; charset=utf-8');
-    echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", Я скоро с Вами свяжусь.";
+    echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", мы скоро свяжемся с Вами.";
 	echo "<br /><br /><a href='https://greed2kk.github.io'>Вернуться на сайт.</a>";
 }
 ?>
