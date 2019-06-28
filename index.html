@@ -27,7 +27,7 @@
 		});
 	</script>
 	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	 <script src="ajax.js"></script>
+	 <script src="js/ajax.js"></script>
 </head>
 
 <body>
@@ -182,7 +182,7 @@
 
 				<script>
 					var colors = [
-						['#f6608a', '#ffffff'], ['#f6608a', '#ffffff'], ['#f6608a', '#ffffff'], ['#f6608a', '#ffffff'], ['#f6608a', '#ffffff'], ['#f6608a', '#ffffff']
+						['#ffffff', '#ff0000'], ['#ffffff', '#ff0000'], ['#ffffff', '#ff0000'], ['#ffffff', '#ff0000'], ['#ffffff', '#ff0000'], ['#ffffff', '#ff0000']
 					];
 
 					for (i = 1; i <= 7; i++) {
@@ -285,7 +285,7 @@
 
 	<!--//работы-->
 
-	<!--start- свзязь со мной-->
+	<!--start- свзязь со мной
 	<div class="contact_desc" id="contact">
 			<div class="container">
 				<h3 class="tittle">Связатьсо со мной</h3>
@@ -318,29 +318,30 @@
 			  </div>
 			  </div>
 		</div>
-		<!-- need to fix
+	-->
+
+	
 	<div class="contact_desc" id="contact">
 		<div class="container">
-			<h3 class="tittle">Свяжитесь со мной(Обработка формы временнно не работает)</h3>
+			<h3 class="tittle">Свяжитесь со мной</h3>
 			<div class="contact-form">
 				
 					<form method="post" id="ajax_form" action="" >
-
-							Ваше имя <input type="text" name="first_name" required placeholder="Обязательное поле"><br>
-							Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
-							Номер телефона: <input type="text" name="phone"><br>
-							Сообщение:<br><textarea rows="5" name="message" cols="30" required placeholder="Обязательное поле"></textarea><br>
+							Ваше Имя или Наименоване Организации<input type="text" name="first_name" required placeholder="Обязательное поле"><br>
+							Номер телефона: <input type="text" name="phone" placeholder="+7(***)***-**-**"><br>
+							E-mail: <input type="text" name="email" required placeholder="example@gmail.com"><br>
+							Сообщение: <textarea name="message" required placeholder="Текст Вашего предложения..."></textarea>
 							<input type="button" id="btn" value="Отправить" />
 							</form>
 							<br>
 							<div id="result_form"></div> 
-
+							
 				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
 
--->
+
 
 	<div class="contact" id="contact">
 		<div class="col-md-6 contact-top">
@@ -365,7 +366,7 @@
 
 	<!--footer-->
 	<div class="copy">
-		<p>&copy; 2019 Портфоло. Мой <a href="https://vk.com/greedos">VK</a> </p>
+		<p>&copy; 2019 Портфолио. Мой <a href="https://vk.com/greedos">VK</a> </p>
 	</div>
 	<!--start-smoth-scrolling-->
 	<script type="text/javascript">

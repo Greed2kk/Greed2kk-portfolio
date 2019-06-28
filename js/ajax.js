@@ -1,4 +1,4 @@
-/* Article FructCode.com */
+
 $( document ).ready(function() {
     $("#btn").click(
 		function(){
@@ -10,16 +10,17 @@ $( document ).ready(function() {
  
 function sendAjaxForm(result_form, ajax_form, url) {
     $.ajax({
-        url:     url, //url страницы (action_ajax_form.php)
-        type:     "POST", //метод отправки
-        dataType: "html", //формат данных
-        data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
-        success: function(response) { //Данные отправлены успешно
+        url:     url, 
+        type:     "POST", 
+        dataType: "html", 
+        data: $("#"+ajax_form).serialize(),  
+        success: function(response) { 
         	result = $.parseJSON(response);
-        	$('#result_form').html('Имя: '+result.first_name+'<br>Телефон: '+result.phone+'<br>email: '+result.email+'<br>сообщение: '+result.message);
+        	$('#result_form').html('<a color="red">'+'Сообщение отправлено!'+'</a>'+'<img src="https://cdn.pixabay.com/photo/2013/07/13/10/08/green-156618_1280.png" width="25" height"25" alt="">');
     	},
-    	error: function(response) { // Данные не отправлены
-            $('#result_form').html('Ошибка. Данные не отправлены.');
+    	error: function(response) { 
+            $('#result_form').html('<a color="red">'+'Ошибка. Данные не отправлены '+'</a>' + '<img src="http://auto-science.ru/wp-content/uploads/2016/06/g11.png" width="25" height"25" alt="">');
+            
     	}
  	});
 }
