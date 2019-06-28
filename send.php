@@ -6,6 +6,20 @@
 ВНИМАНИЕ! Лучше всего в переменную myemail прописать почту домена, который использует сайт. А не mail.ru, gmail и тд.
 */
 if(isset($_POST['submit'])){
+
+    if (isset($_POST["first_name"]) && isset($_POST["phone"]) && isset($_POST["email"]) && isset($_POST["message"])) { 
+
+        // Формируем массив для JSON ответа
+        $result = array(
+            'name' => $_POST["name"],
+            'phone' => $_POST["phone"],
+            'email' => $_POST["email"],
+            'message' => $_POST["message"]
+        ); 
+    
+        // Переводим массив в JSON
+        echo json_encode($result); 
+    }
 /* Устанавливаем e-mail Кому и от Кого будут приходить письма */    
 	$to = "greed2kk@gmail.com"; // Здесь нужно написать e-mail, куда будут приходить письма	
     $from = "no-reply@epicblog.net"; // Здесь нужно написать e-mail, от кого будут приходить письма, например no-reply@epicblog.net
@@ -36,12 +50,13 @@ $headers = "From: $from \r\n";
 	
 /* Отправка сообщения, с помощью функции mail() */
     mail($to, $subject, $mail_to_myemail, $headers . 'Content-type: text/plain; charset=utf-8');
-    echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", мы скоро свяжемся с Вами.";
-	echo "<br /><br /><a href='https://greed2kk.github.io'>Вернуться на сайт.</a>";
+    //echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", мы скоро свяжемся с Вами.";
+	//echo "<br /><br /><a href='https://greed2kk.github.io'>Вернуться на сайт.</a>";
 }
 ?>
-<!--Переадресация на главную страницу сайта, через 3 секунды-->
+<!--Переадресация на главную страницу сайта, через 3 секунды
 <script language="JavaScript" type="text/javascript">
 function changeurl(){eval(self.location="https://greed2kk.github.io");}
 window.setTimeout("changeurl();",3000);
 </script>
+-->
